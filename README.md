@@ -1,50 +1,75 @@
-# generador-actividades-ia
 
-ExploraJugando: Generador de actividades para niños con IA
+# ExploraJugando: Generador de actividades para niños con IA
 
-Descripción
-ExploraJugando es una aplicación web desarrollada con Streamlit e integrada con la API de OpenAI que genera actividades creativas, educativas y divertidas para niños de 4 a 10 años, adaptadas a su edad e intereses. Pensada para padres, madres, docentes y cuidadores, esta herramienta ofrece una manera sencilla y rápida de acceder a propuestas lúdicas que fomentan el desarrollo integral infantil.
+ExploraJugando es una aplicación web que utiliza Inteligencia Artificial para generar actividades creativas y educativas personalizadas para niños, basada en su edad e intereses. Fue desarrollada con Streamlit y la API de OpenAI como proyecto para la materia "Inteligencia Artificial: Prompt Engineering para programadores".
 
-Funcionalidades
+## 👤 Autor
 
-Generación automática de actividades personalizadas con IA
+- Ignacio Luis Daddario  
+- Usuario de GitHub: [Liam1603177](https://github.com/Liam1603177)
 
-Input simple: edad e intereses del niño/a
+## 🌟 Objetivo
 
-Resultados instantáneos y listos para usar
+Crear una solución práctica que ayude a padres, docentes y cuidadores a encontrar ideas de juegos y actividades personalizadas para fomentar el desarrollo cognitivo, emocional y social de los niños.
 
-Interfaz amigable y accesible desde cualquier navegador
+## 🧩 Problemática
 
-¿Cómo funciona?
+Muchos padres y docentes se enfrentan a la dificultad de encontrar actividades originales, educativas y adaptadas a la edad de los niños. Las ideas suelen repetirse y no siempre son adecuadas a los intereses específicos o al contexto del niño (clima, espacio disponible, materiales, etc.).
 
-El usuario indica la edad del niño/a y sus intereses principales (por ejemplo: animales, pintura, ciencia, dinosaurios).
+## 💡 Solución Propuesta
 
-Al presionar el botón "Generar actividad", se envía un prompt personalizado a la API de OpenAI.
+ExploraJugando genera actividades únicas e interactivas para niños, basándose en:
 
-La IA responde con una actividad sugerida que incluye descripción, materiales y pasos.
+- Edad
+- Intereses específicos (como ciencia, arte, movimiento, etc.)
+- Materiales disponibles
+- Lugar de la actividad (interior/exterior)
 
-Tecnologías utilizadas
+Esto permite que las propuestas estén mejor adaptadas a cada situación. Utiliza modelos de lenguaje avanzados (GPT-3.5-turbo) para generar textos creativos, educativos y seguros.
 
-Python 3.11
+## 🖥️ Funcionalidad de la App
 
-Streamlit
+- 🎨 Título y descripción de la app
+- 📋 Campos para ingresar edad, intereses y contexto
+- 🔁 Botón para generar actividad personalizada
+- 📚 Sección “¿Cómo funciona?” que explica el propósito y la mecánica de la app
 
-OpenAI API
+## 🚀 Acceso a la aplicación
 
-python-dotenv
+- Aplicación en línea:  
+  👉 https://generador-actividades-ia-fpkbsxrrfpghggh2ocnp37.streamlit.app/
 
-Prompt inicial utilizado
+- Código fuente en GitHub:  
+  👉 https://github.com/Liam1603177/generador-actividades-ia
 
-Genera una actividad creativa, educativa y divertida para un niño de {edad} años con intereses en {intereses}. La actividad debe poder hacerse en casa, requerir pocos materiales y durar entre 15 y 30 minutos. Debe incluir una breve descripción, los materiales necesarios y los pasos a seguir. Asegúrate de que sea apropiada para su edad y fomente habilidades cognitivas, emocionales o sociales.
+## 🔐 Prompt Inicial
 
-Repositorio del proyecto
+A continuación, el prompt utilizado como base para interactuar con la API de OpenAI:
 
-https://github.com/Liam1603177/generador-actividades-ia
+```
+Actúa como un generador de actividades para niños. Según la edad y los intereses que te indique, proponé una actividad educativa, creativa y divertida. Indicá los materiales necesarios, el paso a paso para desarrollarla y los beneficios que tiene para el desarrollo del niño. Usá un lenguaje claro y adecuado a la edad.
+```
 
-App desplegada
+Este prompt fue elegido por su claridad, tono amigable y por pedir una respuesta estructurada que cubra los elementos clave (actividad + materiales + beneficios).
 
-https://generador-actividades-ia-fpkbsxrrfpghggh2ocnp37.streamlit.app/
+## 💵 Factibilidad económica
 
-Autor
+Se utilizó la API de OpenAI con el modelo GPT-3.5-turbo, que ofrece un bajo costo por token. Las consultas son breves, por lo que el costo por uso es bajo y escalable. En una implementación básica, puede utilizarse gratuitamente bajo los límites de uso de la API.
 
-Ignacio Luis Daddario
+## 📦 Instalación local
+
+1. Clonar el repositorio:
+   git clone https://github.com/Liam1603177/generador-actividades-ia
+
+2. Instalar dependencias:
+   pip install -r requirements.txt
+
+3. Crear un archivo .env con tu clave de OpenAI:
+   OPENAI_API_KEY=tu_clave_aquí
+
+4. Ejecutar la app:
+   streamlit run app.py
+
+## ✅ Conclusión
+
+ExploraJugando permite aprovechar el poder de la IA para resolver una necesidad real en familias y ámbitos educativos. Es una herramienta flexible, divertida y útil para fomentar el juego creativo y el aprendizaje en los niños.
